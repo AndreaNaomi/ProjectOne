@@ -47,17 +47,19 @@ constructor () {
         const nextbts = document.getElementById("nextbtn");
         const score = document.getElementById("dinheirobtn");
         const answerOptions = document.getElementById("answerbutton");
+        const audioJogoVaiComecar = new Audio("./assets/audio/src_assets_audios_vai-comecar.wav")
 
         startButton.addEventListener("click", ()=>{
-        console.log("Start");
-        startButton.classList.add("hide");
-        answerOptions.classList.remove('hide');
-        nextbts.classList.remove('hide');
-        score.classList.remove('hide');
-        questionContainers.classList.remove('hide');
-        
+            console.log("Start");
+            startButton.classList.add("hide");
+            answerOptions.classList.remove('hide');
+            nextbts.classList.remove('hide');
+            score.classList.remove('hide');
+            questionContainers.classList.remove('hide');
+            
+            audioJogoVaiComecar.play()
 
-        this.showQuestion()
+            this.showQuestion()
 
         });
     };
@@ -118,7 +120,8 @@ constructor () {
         if(this.question[this.round].correctAnswer === cliquedousuario){
 
             console.log("Acertou")
-
+            const audioAcertou = new Audio("./assets/audio/src_assets_certa-resposta.wav")
+            audioAcertou.play()
 
             this.money += Number(this.question[this.round].dinheiro)
 
@@ -130,6 +133,8 @@ constructor () {
             this.nextQuestion()
         } else {
             console.log("errou")
+            const audioErrou = new Audio("../assets/audio/src_assets_audios_que-pena.wav")
+            audioErrou.play()
             console.log(this.life)
             this.life--
            
