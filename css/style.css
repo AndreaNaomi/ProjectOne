@@ -1,0 +1,123 @@
+
+/* .background {
+ */    /* background-color:; */
+   /*  background-repeat: no-repeat; */
+/*     width: 100vh;
+    height: 100vh;
+    background-size: cover;
+} */
+
+/* h1 {
+    height: 10em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+ */
+/* .question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 80px;
+    border-radius: 12px;
+} */
+
+
+
+
+
+.hide {
+    display: none;
+}
+
+
+/* 
+________________________________________________________________________________ */
+
+*{
+    margin: 0;
+}
+
+.background {
+    /* margin-top: -100px; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 170px;
+    right: 30%;
+}
+
+.gifcomecou {
+    position: absolute;
+    top: 400px;
+    right: 6%;
+    width: 250px;
+    /* height: 200px; */
+}
+
+.startbtn {
+    position: absolute;
+    bottom: 12%;
+    left: 45%;
+   /*  background-color: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(125,125,125,1) 100%); */
+  /*   background-image: url("../assets/imagens/comecougif.gif"); */
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(125,125,125,1) 100%);
+    height: 50px;
+    width: 120px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px black;
+}
+
+
+.startbtn {
+    position: absolute;
+    bottom: 12%;
+    left: 45%;
+   /*  background-color: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(125,125,125,1) 100%); */
+  /*   background-image: url("../assets/imagens/comecougif.gif"); */
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(125,125,125,1) 100%);
+    height: 50px;
+    width: 120px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px black;
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .startbtn:hover {
+    --_p: 100%;
+    --_s: .3s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

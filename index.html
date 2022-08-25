@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" 
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css"/> 
+    <title>Show do Milhão</title><!--//nome da aba-->
 </head>
 <body>
-    
+<div id="begin" class="begin">
+    <img class="background" src="./assets/imagens/back2.png"/>
+    <img class="logo" src="./assets/imagens/logo.jpeg"/>
+    <img class="gifcomecou" src="./assets/imagens/comecougif.gif"/>
+</div>
+
+<div id="backgroundimagem" class="backimg hide">
+    <img src="./assets/imagens/palco-vazio-iluminado-com-cortina-vermelha-do-piso-de-madeira-brilhante-material-pendurado-ilustracao-vetorial-de-holofote_1284-33552.webp"/>
+</div>
+
+<div class="container">
+   <div id="questioncontainer" class="question hide"> <!--is holding the question text and display them-->
+    </div>
+        <div id="answerbutton" class="btn1 hide"> 
+            <button class="btn" id="op1">Answer 1</button>
+            <button class="btn" id="op2">Answer 2</button>
+            <button class="btn" id="op3">Answer 3</button>
+            <button class="btn" id="op4">Answer 4</button>
+        </div>
+    <div class="controls">
+        <button id="startbtn" class="startbtn">Start!</button>
+        <button id="nextbtn" class="nextbutton hide">Next</button>
+        <button id="dinheirobtn" class="dinheirobutton hide">R$ 0,00</button>
+    </div>
+</div>
 
 
 
+<div id="win" class="hide">
+    <img winimage src="./assets/imagens/ummilhao.jpeg"/>
+    <img wingif src="./assets/imagens/silvio-santos-dance.gif"/>
+</div>
+
+
+<div id="loose" class="hide">
+    <img lostimage src="./assets/imagens/perdeugiff.PNG"/>
+    <img lostgif src="./assets/imagens/git voce perdeu.gif"/>
+</div>
 
 
     <script src="./js/game.js"></script>
