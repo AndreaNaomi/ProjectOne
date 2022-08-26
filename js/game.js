@@ -44,19 +44,20 @@ constructor () {
     startGame() {
         const startButton = document.getElementById("startbtn");
         const questionContainers = document.getElementById("questioncontainer");
-        const nextbts = document.getElementById("nextbtn");
+        /* const nextbts = document.getElementById("nextbtn"); */
         const score = document.getElementById("dinheirobtn");
         const answerOptions = document.getElementById("answerbutton");
         const audioJogoVaiComecar = new Audio("./assets/audio/src_assets_audios_vai-comecar.wav")
+       
 
         startButton.addEventListener("click", ()=>{
-            console.log("Start");
+          /*   console.log("Start"); */
             startButton.classList.add("hide");
             answerOptions.classList.remove('hide');
-            nextbts.classList.remove('hide');
+        /*     nextbts.classList.remove('hide'); */
             score.classList.remove('hide');
             questionContainers.classList.remove('hide');
-            
+           
             audioJogoVaiComecar.play()
 
             this.showQuestion()
@@ -92,10 +93,14 @@ constructor () {
     checkAnswer(cliquedousuario){
         //if(aqui a condicao){aqui oque fazer caso aceite a condicao}
         if (this.round === 4 && "Momofuku Ando" === cliquedousuario){
+
             console.log('ele ganhoouuu')
 
             this.confirmacaoDeGanho++
             console.log(this.confirmacaoDeGanho)
+
+            const milhao = new Audio("./assets/audio/src_assets_audios_ganhou-1-milhao.wav")
+            milhao.play()
 
         const inicio = document.querySelector("#begin")
         const board = document.querySelector(".container");
@@ -108,9 +113,8 @@ constructor () {
         winn.classList.remove("hide")
         /* winn.style.display = "block"
         lost.style.display = "block" */
-      
 
-
+        return
         }
      
         /* se acertar this.money += this.question[this.round].dinheiro */
